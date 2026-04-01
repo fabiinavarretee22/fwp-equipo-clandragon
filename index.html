@@ -15,18 +15,18 @@
             // ==========================================
             // 1. TUS DATOS BÁSICOS Y CONTACTO
             // ==========================================
-            nombreNegocio: "Distribuidor Independiente FWP",
-            whatsapp: "56939033461", // Tu número sin el +
-            email: "tu-correo@gmail.com",
+            nombreNegocio: "Distribuidor Independiente FWP Chiloé",
+            whatsapp: "56989367132", // Tu número sin el +
+            email: "Fabiinavarretee22@gmail.com",
 
             // ==========================================
             // 1.B TUS DATOS BANCARIOS (Para Transferencias)
             // ==========================================
-            bancoNombre: "Banco Estado",
-            bancoTipo: "Cuenta RUT",
-            bancoNumero: "12345678",
-            bancoTitular: "Juan Pérez",
-            bancoRut: "12.345.678-9",
+            bancoNombre: "Mercado pago",
+            bancoTipo: "Cuenta vista",
+            bancoNumero: "1026178308",
+            bancoTitular: "Fabiola Navarrete",
+            bancoRut: "17.649.825-0",
 
             // ==========================================
             // 2. PUBLICIDAD (META ADS)
@@ -45,10 +45,10 @@
             // ==========================================
             precios: {
                 // --- CHILE ---
-                renova1: "49.990", renovaVIP: "239.990",
-                burn1: "35.990", burnVIP: "239.990",
-                boost1: "39.990", boostVIP: "239.990",
-                liv1: "49.990", livVIP: "239.990",
+                renovaChiloe: "49.990", renovaVIP: "239.990",
+                burnChiloe: "35.990", burnVIP: "239.990",
+                boostChiloe: "39.990", boostVIP: "239.990",
+                livChiloe: "49.990", livVIP: "239.990",
                 comboCL1: "81.681", comboCL2: "72.181", comboCL3: "85.481", comboCL4: "167.162",
                 precios: {
                 // --- PERÚ ---
@@ -57,7 +57,7 @@
                 boostPE1: "160",
                 livPE1: "150",
                 omega1: "140", omegaVIP: "700",
-                comboPE1: "290", comboPE2: "310", comboPE3: "280", comboPE4: "590", // <--- AGREGADOS
+                comboPE1: "290", com boPE2: "310", comboPE3: "280", comboPE4: "590", // <--- AGREGADOS
                 // --- MÉXICO ---
                 renovaMX1: "998", renovaMXVIP: "4500",
                 scentiaMX1: "998",
@@ -65,17 +65,32 @@
             },
             },
 
-            // ==========================================
+// ==========================================
             // 5. TUS LINKS DE PAGO 
             // ==========================================
             pagos: {
                 // --- CHILE ---
-                renova1: "[https://mpago.la/](https://mpago.la/)...", renovaVIP: "[https://mpago.la/](https://mpago.la/)...",
-                burn1: "[https://mpago.la/](https://mpago.la/)...", burnVIP: "[https://mpago.la/](https://mpago.la/)...",
-                boost1: "[https://mpago.la/](https://mpago.la/)...", boostVIP: "[https://mpago.la/](https://mpago.la/)...",
-                liv1: "[https://mpago.la/](https://mpago.la/)...", livVIP: "[https://mpago.la/](https://mpago.la/)...",
-                comboCL1: "[https://mpago.la/](https://mpago.la/)...", comboCL2: "[https://mpago.la/](https://mpago.la/)...", 
-                comboCL3: "[https://mpago.la/](https://mpago.la/)...", comboCL4: "[https://mpago.la/](https://mpago.la/)...",
+
+                // 🔴 RENOVA+:
+                renova1: "https://mpago.la/1XUJxBy", 
+                renovaChiloe: "https://mpago.la/34cRyWg", // <- El botón azul usa este
+
+                // 🟢 24BURN:
+                burn1: "https://mpago.la/2Q7hV8p", 
+                burnChiloe: "https://mpago.la/1Te6F8Y", // <- El botón azul usa este
+
+                // 🟠 E-BOOST:
+                boost1: "https://mpago.la/1Mft82q", 
+                boostChiloe: "https://mpago.la/1FHNTdE", // <- El botón azul usa este
+
+                // 🔵 LIV:
+                liv1: "https://mpago.la/1jSNbJh", 
+                livChiloe: "https://mpago.la/2SBjrsa", // <- El botón azul usa este
+
+                // ... (Y los links de los Combos y VIPs normales abajo)
+            } 
+
+
                 // --- PERÚ ---
                 renovaPE1: "[https://mpago.pe/](https://mpago.pe/)...",
                 burnplus1: "[https://mpago.pe/](https://mpago.pe/)...", burnplusVIP: "[https://mpago.pe/](https://mpago.pe/)...",
@@ -137,7 +152,28 @@
         .btn-pago:hover { transform: scale(1.02); } 
         .btn-renova { background-color: var(--renova); color: white; } .btn-burn { background-color: var(--burn); color: white; } .btn-boost { background-color: var(--boost); color: white; } .btn-liv { background-color: var(--liv); color: white; } .btn-scentia { background-color: var(--scentia); color: white; } .btn-omega { background-color: var(--omega); color: white; }
         .btn-outline { background-color: transparent; border: 2px solid #ddd; color: #333; } .btn-outline:hover { border-color: #111; background-color: #111; color: white; }
-        
+       /* BOTÓN ESPECIAL CHILOÉ (NUEVO DISEÑO AZUL) */
+       .btn-chiloe {
+            width: 100%;
+            margin-top: 20px;
+            padding: 18px;
+            background: #2563eb; /* Un azul vibrante */
+            border: none;
+            color: #ffffff !important; /* Texto blanco obligatorio */
+            font-weight: 800;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
+        .btn-chiloe:hover {
+            background: #1d4ed8; /* Azul más oscuro al pasar el mouse */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+        }
         .combos-wrapper { padding: 4rem 2rem; background: #111827; border-radius: 24px; color: white; text-align: center; }
         .combos-wrapper h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; }
         .combos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
@@ -193,7 +229,7 @@
 <body>
 
     <div class="urgency-banner" id="mainBanner" style="background: #e11d48;">
-        🎁 Guía de Apoyo Nutricional + Merch de Regalo hoy con tu compra <span id="countdown" style="margin-left:10px; font-weight:bold;">30:00</span>
+        🎁 Guía de Apoyo Nutricional + Rutina de Ejercicios especializada<span id="countdown" style="margin-left:10px; font-weight:bold;">30:00</span>
     </div>
 
     <header class="hero">
@@ -229,101 +265,176 @@
 
     <div class="container hide-country" id="catalogo-chile">
         <section class="product-section" id="prod-renova-cl">
-            <div class="image-col"><div class="glow aura-renova"></div><img src="img/renova.png" class="product-img"></div>
+            <div class="image-col">
+                <div class="glow aura-renova"></div>
+                <img src="img/renova.png" class="product-img">
+            </div>
             <div class="text-col">
-                <span class="tag" style="color: #c0267a;">Reconstrucción Celular</span><h2>Renöva+</h2>
+                <span class="tag" style="color: #c0267a;">Reconstrucción Celular</span>
+                <h2>Renöva+</h2>
                 <p class="description">Dosis diaria de juventud con Biopéptidos Activos de Colágeno y Q10.</p>
+                
                 <details style="background: rgba(192, 38, 122, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: left; cursor: pointer; border: 1px solid rgba(192, 38, 122, 0.2);">
                     <summary style="font-weight: bold; color: #c0267a; outline: none;">🧬 Ver Ingredientes y Ciencia</summary>
                     <div style="padding-top: 12px; font-size: 0.95rem; color: #333; line-height: 1.4;">
-                        <strong>Ingredientes Clave:</strong>Péptidos Bioactivos (Peptan®), Resveratrol, Coenzima Q10, Vitámina C, Zinc, Magnesio y Fortificado con Vitáminas.<br><br>
-                        <strong>Síntesis de Beneficio:</strong>Sus biopéptidos de alta absorción regeneran la matriz de la piel y articulaciones. La Q10 actúa como una "batería" para las células, mejorando la vitalidad general y frenando el daño oxidativo.<br><br>
+                        <strong>Ingredientes Clave:</strong> Péptidos Bioactivos (Peptan®), Resveratrol, Coenzima Q10, Vitámina C, Zinc, Magnesio y Fortificado con Vitáminas.<br><br>
+                        <strong>Síntesis de Beneficio:</strong> Sus biopéptidos de alta absorción regeneran la matriz de la piel y articulaciones. La Q10 actúa como una "batería" para las células, mejorando la vitalidad general y frenando el daño oxidativo.<br><br>
                         <a href="javascript:void(0)" onclick="verFicha('info-renova.png')" style="color:#c0267a; font-weight:bold;">🔍 Ficha Técnica Completa</a>
                     </div>
                 </details>
+
                 <div class="offers-grid">
                     <div class="offer-box">
-                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div><p style="margin:0; font-weight:bold;">Prueba Inicial</p>
-                        <ul class="value-stack"><li>1 Frasco Renöva+</li><li><span class="txt-envio-dinamico">Envío</span> <span class="free penalizable-free">GRATIS</span></li></ul>
-                        <div style="margin-top: 15px;"><span class="price val-precio-dinamico" data-producto="renova1">0</span><a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="renova1">Comprar 1 Unidad</a></div>
+                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div>
+                        <p style="margin:0; font-weight:bold;">Prueba Inicial</p>
+                        <ul class="value-stack">
+                            <li>1 Frasco Renöva+</li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
+                        </ul>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="renova1">$53.990</span>
+                            <a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="renova1">Comprar 1 Unidad</a>
+                        </div>
                     </div>
                     <div class="offer-box offer-vip">
-                        <div class="badge">TRATAMIENTO RECOMENDADO</div><p style="margin:0; font-weight:bold;">Ciclo Médico 5 Meses</p>
-                        <ul class="value-stack"><li>7 Frascos (147 días)</li><li><span class="txt-envio-dinamico">Envío</span> <span class="highlight">INCLUIDO</span></li></ul>
-                        <div style="margin-top: 15px;"><span class="price val-precio-dinamico" data-producto="renovaVIP">0</span><a href="#" class="btn-pago btn-renova link-pago-dinamico" data-link="renovaVIP">Asegurar Tratamiento</a></div>
+                        <div class="badge">TRATAMIENTO RECOMENDADO</div>
+                        <p style="margin:0; font-weight:bold;">Ciclo Médico 5 Meses</p>
+                        <ul class="value-stack">
+                            <li>7 Frascos (147 días)</li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
+                        </ul>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="renovaVIP">$239.990</span>
+                            <a href="#" class="btn-pago btn-renova link-pago-dinamico" data-link="renovaVIP">Asegurar Tratamiento</a>
+                        </div>
                     </div>
                 </div>
+
+                <button class="btn-chiloe link-pago-dinamico" data-link="renovaChiloe">
+                    🌧️ Si eres de Chiloé, ahorra el envío (Retiro Presencial)
+                </button>
+
             </div>
         </section>
 
         <section class="product-section" id="prod-burn-cl">
-            <div class="image-col"><div class="glow aura-burn"></div><img src="img/burn.png" class="product-img"></div>
+            <div class="image-col">
+                <div class="glow aura-burn"></div>
+                <img src="img/burn.png" class="product-img">
+            </div>
             <div class="text-col">
-                <span class="tag" style="color: #8dc63f;">Control Metabólico</span><h2>24BURN</h2>
+                <span class="tag" style="color: #8dc63f;">Control Metabólico</span>
+                <h2>24BURN</h2>
                 <p class="description">Optimiza la oxidación de grasas y controla la ansiedad 24/7.</p>
+                
                 <details style="background: rgba(141, 198, 63, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: left; cursor: pointer; border: 1px solid rgba(141, 198, 63, 0.2);">
                     <summary style="font-weight: bold; color: #8dc63f; outline: none;">🍀 Ver Ingredientes y Ciencia</summary>
                     <div style="padding-top: 12px; font-size: 0.95rem; color: #333; line-height: 1.4;">
-                        <strong>Ingredientes Clave:</strong> L-Carnitina, Panax Ginseng, Té Verde, Guaraná, Kelp y Vitaminas..<br><br>
+                        <strong>Ingredientes Clave:</strong> L-Carnitina, Panax Ginseng, Té Verde, Guaraná, Kelp y Vitaminas.<br><br>
                         <strong>Síntesis de Beneficio:</strong> Transforma la grasa acumulada en energía utilizable (ATP). Se reduce la ansiedad cerebral por el dulce, mientras que el té verde acelera la termogénesis de forma natural.<br><br>
                         <a href="javascript:void(0)" onclick="verFicha('info-burn.png')" style="color:#8dc63f; font-weight:bold;">🔍 Ficha Técnica Completa</a>
                     </div>
                 </details>
+
                 <div class="offers-grid">
                     <div class="offer-box">
-                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div><p style="margin:0; font-weight:bold;">Activador</p>
-                        <ul class="value-stack"><li>1 Frasco 24BURN</li><li><span class="txt-envio-dinamico">Envío</span> <span class="free penalizable-free">GRATIS</span></li></ul>
-                        <div style="margin-top: 15px;"><span class="price val-precio-dinamico" data-producto="burn1">0</span><a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="burn1">Comprar 1 Unidad</a></div>
+                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div>
+                        <p style="margin:0; font-weight:bold;">Activador</p>
+                        <ul class="value-stack">
+                            <li>1 Frasco 24BURN</li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
+                        </ul>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="burn1">$39.990</span>
+                            <a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="burn1">Comprar 1 Unidad</a>
+                        </div>
                     </div>
                     <div class="offer-box offer-vip">
-                        <div class="badge">PROGRAMA INTENSIVO</div><p style="margin:0; font-weight:bold;">Transformación Total</p>
-                        <ul class="value-stack"><li>10 Frascos 24BURN</li><li><span class="txt-envio-dinamico">Envío</span> <span class="highlight">INCLUIDO</span></li></ul>
-                        <div style="margin-top: 15px;"><span class="price val-precio-dinamico" data-producto="burnVIP">0</span><a href="#" class="btn-pago btn-burn link-pago-dinamico" data-link="burnVIP">Activar Mi Cuerpo</a></div>
+                        <div class="badge">PROGRAMA INTENSIVO</div>
+                        <p style="margin:0; font-weight:bold;">Transformación Total</p>
+                        <ul class="value-stack">
+                            <li>10 Frascos 24BURN</li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
+                        </ul>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="burnVIP">$239.990</span>
+                            <a href="#" class="btn-pago btn-burn link-pago-dinamico" data-link="burnVIP">Activar Mi Cuerpo</a>
+                        </div>
                     </div>
                 </div>
+
+                <button class="btn-chiloe link-pago-dinamico" data-link="burnChiloe">
+                    🌧️ Si eres de Chiloé, ahorra el envío (Retiro Presencial)
+                </button>
+
             </div>
         </section>
 
         <section class="product-section" id="prod-boost-cl">
-            <div class="image-col"><div class="glow aura-boost"></div><img src="img/boost.png" class="product-img"></div>
+            <div class="image-col">
+                <div class="glow aura-boost"></div>
+                <img src="img/boost.png" class="product-img">
+            </div>
             <div class="text-col">
-                <span class="tag" style="color: #f26522;">Energía & Enfoque</span><h2>E-BOOST</h2>
+                <span class="tag" style="color: #f26522;">Energía & Enfoque</span>
+                <h2>E-BOOST</h2>
                 <p class="description">Combustible premium para tu cerebro sin efecto rebote.</p>
+                
                 <details style="background: rgba(242, 101, 34, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: left; cursor: pointer; border: 1px solid rgba(242, 101, 34, 0.2);">
                     <summary style="font-weight: bold; color: #f26522; outline: none;">⚡ Ver Ingredientes y Ciencia</summary>
                     <div style="padding-top: 12px; font-size: 0.95rem; color: #333; line-height: 1.4;">
                         <strong>Ingredientes Clave:</strong> Mix de Aminoácidos BCAA (Leucina, Valina e Isoleucina), Guaraná, Yerba Mate, Té Negro, Fibra de Bamboo, Mix Vitamínico y Stevia.<br><br>
-                        <strong>Síntesis de Beneficio:</strong> La cafeína natural se libera de forma sostenida evitando el "crash". Los BCAA protegen el músculo durante el estrés físico y los electrolitos garantizan la hidratación neuronal. <a href="javascript:void(0)" onclick="verFicha('info-boost.png')" style="color:#e65c00; font-weight:bold;">🔍 Ficha Técnica Completa</a>
+                        <strong>Síntesis de Beneficio:</strong> La cafeína natural se libera de forma sostenida evitando el "crash". Los BCAA protegen el músculo durante el estrés físico y los electrolitos garantizan la hidratación neuronal.<br><br>
+                        <a href="javascript:void(0)" onclick="verFicha('info-boost.png')" style="color:#e65c00; font-weight:bold;">🔍 Ficha Técnica Completa</a>
                     </div>
                 </details>
+
                 <div class="offers-grid">
                     <div class="offer-box">
-                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div><p style="margin:0; font-weight:bold;">Prueba Potencia</p>
+                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div>
+                        <p style="margin:0; font-weight:bold;">Prueba Potencia</p>
                         <ul class="value-stack">
                             <li>1 Caja E-BOOST</li>
-                            <li><span class="txt-envio-dinamico">Envío</span> <span class="free">GRATIS</span></li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
                             <li>Guía de Rendimiento <span class="free">GRATIS</span></li>
                         </ul>
-                        <div style="margin-top: auto;"><span class="price val-precio-dinamico" data-producto="boost1">0</span><a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="boost1">Comprar 1 Unidad</a></div>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="boost1">$43.990</span>
+                            <a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="boost1">Comprar 1 Unidad</a>
+                        </div>
                     </div>
                     <div class="offer-box offer-vip">
-                        <div class="badge">ARSENAL COMPLETO</div><p style="margin:0; font-weight:bold;">Productividad</p>
+                        <div class="badge">ARSENAL COMPLETO</div>
+                        <p style="margin:0; font-weight:bold;">Productividad</p>
                         <ul class="value-stack">
                             <li>9 Cajas E-BOOST</li>
-                            <li><span class="txt-envio-dinamico">Envío</span> <span class="highlight">INCLUIDO</span></li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
                             <li>Comunidad Privada <span class="free">ACCESO VIP</span></li>
                         </ul>
-                        <div style="margin-top: auto;"><span class="price val-precio-dinamico" data-producto="boostVIP">0</span><a href="#" class="btn-pago btn-boost link-pago-dinamico" data-link="boostVIP">Potenciar Mi Día</a></div>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="boostVIP">$239.990</span>
+                            <a href="#" class="btn-pago btn-boost link-pago-dinamico" data-link="boostVIP">Potenciar Mi Día</a>
+                        </div>
                     </div>
                 </div>
+
+                <button class="btn-chiloe link-pago-dinamico" data-link="boostChiloe">
+                    🌧️ Si eres de Chiloé, ahorra el envío (Retiro Presencial)
+                </button>
+
             </div>
         </section>
 
         <section class="product-section" id="prod-liv-cl">
-            <div class="image-col"><div class="glow aura-liv"></div><img src="img/liv.png" class="product-img"></div>
+            <div class="image-col">
+                <div class="glow aura-liv"></div>
+                <img src="img/liv.png" class="product-img">
+            </div>
             <div class="text-col">
-                <span class="tag" style="color: #00aeef;">Salud Digestiva</span><h2>LIV</h2>
+                <span class="tag" style="color: #00aeef;">Salud Digestiva</span>
+                <h2>LIV</h2>
                 <p class="description">Limpieza profunda y desinflamación abdominal.</p>
+                
                 <details style="background: rgba(0, 174, 239, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: left; cursor: pointer; border: 1px solid rgba(0, 174, 239, 0.2);">
                     <summary style="font-weight: bold; color: #00aeef; outline: none;">🌿 Ver Ingredientes y Ciencia</summary>
                     <div style="padding-top: 12px; font-size: 0.95rem; color: #333; line-height: 1.4;">
@@ -332,26 +443,40 @@
                         <a href="javascript:void(0)" onclick="verFicha('info-liv.png')" style="color:#4CAF50; font-weight:bold;">🔍 Ficha Técnica Completa</a>
                     </div>
                 </details>
+
                 <div class="offers-grid">
                     <div class="offer-box">
-                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div><p style="margin:0; font-weight:bold;">Prueba Detox</p>
+                        <div class="badge badge-urgency">🔥 STOCK LIMITADO</div>
+                        <p style="margin:0; font-weight:bold;">Prueba Detox</p>
                         <ul class="value-stack">
                             <li>1 Frasco LIV</li>
-                            <li><span class="txt-envio-dinamico">Envío</span> <span class="free">GRATIS</span></li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
                             <li>Guía Detox <span class="free">GRATIS</span></li>
                         </ul>
-                        <div style="margin-top: auto;"><span class="price val-precio-dinamico" data-producto="liv1">0</span><a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="liv1">Comprar 1 Unidad</a></div>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="liv1">$53.990</span>
+                            <a href="#" class="btn-pago btn-outline link-pago-dinamico" data-link="liv1">Comprar 1 Unidad</a>
+                        </div>
                     </div>
                     <div class="offer-box offer-vip">
-                        <div class="badge">TRATAMIENTO</div><p style="margin:0; font-weight:bold;">Equilibrio Total</p>
+                        <div class="badge">TRATAMIENTO</div>
+                        <p style="margin:0; font-weight:bold;">Equilibrio Total</p>
                         <ul class="value-stack">
                             <li>7 Frascos LIV</li>
-                            <li><span class="txt-envio-dinamico">Envío</span> <span class="highlight">INCLUIDO</span></li>
+                            <li>Envío Nacional <span class="highlight">INCLUIDO</span></li>
                             <li>Comunidad Privada <span class="free">ACCESO VIP</span></li>
                         </ul>
-                        <div style="margin-top: auto;"><span class="price val-precio-dinamico" data-producto="livVIP">0</span><a href="#" class="btn-pago btn-liv link-pago-dinamico" data-link="livVIP">Fluir Ligero</a></div>
+                        <div style="margin-top: 15px;">
+                            <span class="price val-precio-dinamico" data-producto="livVIP">$239.990</span>
+                            <a href="#" class="btn-pago btn-liv link-pago-dinamico" data-link="livVIP">Fluir Ligero</a>
+                        </div>
                     </div>
                 </div>
+
+                <button class="btn-chiloe link-pago-dinamico" data-link="livChiloe">
+                    🌧️ Si eres de Chiloé, ahorra el envío (Retiro Presencial)
+                </button>
+
             </div>
         </section>
         
@@ -654,15 +779,16 @@
                 <input type="tel" id="chk-telefono" class="checkout-input" placeholder="Tu Teléfono / WhatsApp" required>
                 <input type="text" id="chk-direccion" class="checkout-input" placeholder="Dirección de Envío Completa" required>
 
-                <div class="value-stack-box" style="margin-top: 5px;">
-                    <strong style="color: #166534; font-size: 0.95rem;">🎁 Beneficios pagando con Transferencia:</strong>
-                    <ul style="margin-bottom: 0;">
-                        <li>✅ <strong>Precio Neto:</strong> Cero comisiones ocultas.</li>
-                        <li>✅ <strong>Despacho Prioritario:</strong> Saltas la fila de envíos.</li>
+                <div class="value-stack-box" style="margin-top: 5px; background: #ecfdf5; border-color: #10b981;">
+                    <p style="margin:0; font-weight:bold; color:#059669;">🎁 ¡TU PEDIDO INCLUYE REGALOS!:</p>
+                    <ul style="margin: 5px 0 0 15px; font-size: 0.85rem; color: #059669; text-align: left; list-style: disc;">
+                        <li>Guía de Apoyo Nutricional (Digital)</li>
+                        <li>Rutina de Ejercicios Digital</li>
+                        <li>Asesoría personalizada incluida</li>
                     </ul>
                 </div>
                 
-                <button onclick="procesarPago('transferencia')" class="btn-pago btn-transferencia">🏦 Pagar con Transferencia (VIP)</button>
+                <button onclick="procesarPago('transferencia')" class="btn-pago btn-transferencia">🏦 Pagar con Transferencia (Recomendado)</button>
                 <button onclick="procesarPago('mp')" class="btn-pago btn-mercadopago">💳 Pagar con Mercado Pago / Tarjeta</button>
             </div>
 
@@ -750,13 +876,19 @@
         let checkoutActualId = ''; let checkoutActualLink = ''; let checkoutActualNombre = ''; let checkoutActualPrecio = '';
 
         function abrirCheckout(id, nombre, precio) {
-    checkoutActualId = id; 
-    checkoutActualLink = CONFIG.pagos[id] || '#'; 
-    checkoutActualNombre = nombre; 
-    checkoutActualPrecio = precio;
+            checkoutActualId = id; 
+            checkoutActualLink = CONFIG.pagos[id] || '#'; 
+            checkoutActualNombre = nombre; 
+            checkoutActualPrecio = precio;
 
-    document.getElementById('checkout-prod-name').innerText = nombre + " (" + precio + ")";
-    document.getElementById('transfer-total').innerText = precio;
+            // Lógica inteligente: Si hay precio le pone paréntesis, si no, lo deja limpio.
+            let textoPrecio = precio ? " (" + precio + ")" : "";
+            document.getElementById('checkout-prod-name').innerText = nombre + textoPrecio;
+            document.getElementById('transfer-total').innerText = precio || "Revisar costo exacto";
+
+            document.getElementById('checkout-step-1').style.display = 'block';
+            document.getElementById('checkout-step-2').style.display = 'none';
+            document.getElementById('modalCheckout').classList.add('active');
 
     // --- LÍNEA NUEVA PARA LOS REGALOS ---
     const stackBox = document.querySelector('.value-stack-box');
@@ -765,7 +897,7 @@
             <p style="margin:0; font-weight:bold; color:#059669;">🎁 ¡TU PEDIDO INCLUYE REGALOS!:</p>
             <ul style="margin: 5px 0 0 15px; font-size: 0.85rem; color: #059669; text-align: left;">
                 <li>✅ Guía de Apoyo Nutricional (Digital)</li>
-                <li>✅ Merch Oficial FWP de regalo</li>
+                <li>✅ Rutina de Ejercicios Especializada</li>
                 <li>✅ Asesoría personalizada incluida</li>
             </ul>
         `;
@@ -885,3 +1017,4 @@ const timerInterval = setInterval(() => {
     </script>
 </body>
 </html>
+
